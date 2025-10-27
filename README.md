@@ -12,5 +12,5 @@
 1. Download the [android sdk command line tools](https://androidsdkmanager.azurewebsites.net/cmdline-tools.html)
 2. Put the folder in ``C:\Android\cmdline-tools``
 3. Create the ``ANDROID_HOME`` enviroment variable as ``C:\Android``
-4. Add ``C:\Android\cmdline-tools\bin`` to the PATH
+4. Add ``C:\Android\cmdline-tools\latest\bin`` to the PATH
 5. Now init the SDK by running ``sdkmanager.bat "platform-tools" "platforms;android-35" "build-tools;35.0.0"``
