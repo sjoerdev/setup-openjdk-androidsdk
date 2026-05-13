@@ -22,7 +22,7 @@
 1. Install ``emulator`` by running ``sdkmanager "emulator"``
 2. Add ``C:\Android\emulator`` to the PATH
 3. Install android image ``sdkmanager "system-images;android-35;google_apis_playstore;x86_64"``
-4. Create a virtual phone by running ``avdmanager create avd -n myphone_name -k "system-images;android-35;google_apis_playstore;x86_64" --device "pixel_tablet"``
+4. Create a virtual phone by running ``avdmanager create avd -n myphone_name -k "system-images;android-35;google_apis_playstore;x86_64"`` and optionally specify which device to emulator using ``--device "pixel_tablet"`` for example
 5. Run the virtual phone by running ``emulator -avd myphone_name -gpu host -memory 4096 -cores 4``
 7. To list virtual devices run ``emulator -list-avds``
 8. To delete a virtual device run ``avdmanager delete avd -n myphone_name``
