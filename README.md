@@ -1,4 +1,4 @@
-# Setup OpenJDK and Android SDK
+# Setup Android Tools
 
 ## OpenJDK
 
