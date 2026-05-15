@@ -12,7 +12,7 @@ Start-BitsTransfer -Source $openjdk_download_link -Destination "$($temp)\openjdk
 Expand-Archive -Path "$($temp)\openjdk.zip" -DestinationPath "$($temp)\openjdk"
 
 # move the openjdk files into the preferred JAVA_HOME location
-New-Item -ItemType Directory -Path $openjdk_prefered_location
+New-Item -ItemType Directory -Path $openjdk_prefered_location | Out-Null
 Move-Item -Path "$($temp)\openjdk\jdk-$($openjdk_version)\*" -Destination $openjdk_prefered_location -Force
 
 # create the JAVA_HOME enviroment variable as $openjdk_prefered_location
