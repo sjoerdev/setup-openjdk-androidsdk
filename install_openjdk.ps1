@@ -1,3 +1,4 @@
+# this is a powershell script for installing openjdk
 
 $openjdk_version = "26.0.1"
 $openjdk_prefered_location = "C:\jdk"
