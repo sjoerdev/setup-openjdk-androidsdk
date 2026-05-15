@@ -15,6 +15,10 @@ Expand-Archive -Path "$($temp)\openjdk.zip" -DestinationPath "$($temp)\openjdk"
 New-Item -ItemType Directory -Path $openjdk_prefered_location | Out-Null
 Move-Item -Path "$($temp)\openjdk\jdk-$($openjdk_version)\*" -Destination $openjdk_prefered_location -Force
 
+# clean up temp folder
+Remove-Item -Path "$($temp)\openjdk.zip"
+Remove-Item -Path "$($temp)\openjdk" -Recurse
+
 # create the JAVA_HOME enviroment variable as $openjdk_prefered_location
 [Environment]::SetEnvironmentVariable("JAVA_HOME", $openjdk_prefered_location, "User")
 
