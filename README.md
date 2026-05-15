@@ -2,6 +2,8 @@
 
 ## OpenJDK
 
+> You can optionally just use the ``install_openjdk.ps1`` script inside the repo
+
 1. Download [OpenJDK](https://openjdk.org/) for windows
 2. Put the folder in ``C:\jdk``
 3. Create the ``JAVA_HOME`` enviroment variable as ``C:\jdk``
