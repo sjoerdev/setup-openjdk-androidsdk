@@ -3,6 +3,9 @@
 $tools_preferred_home = "C:\Android"
 $tools_preferred_location = "$($tools_preferred_home)\cmdline-tools\latest"
 
+# kill adb server if its still running
+Get-Process adb -ErrorAction SilentlyContinue | Stop-Process -Force
+
 # remove the android home installation directory
 Remove-Item -Path $tools_preferred_home -Recurse -Force -ErrorAction Stop
 
