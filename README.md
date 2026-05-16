@@ -9,7 +9,9 @@
 3. Create the ``JAVA_HOME`` enviroment variable as ``C:\jdk``
 4. Add ``C:\jdk\bin`` to the PATH
 
-## Android SDK
+## Android Command Line Tools
+
+> You can optionally just use the ``install_android_command_tools.ps1`` script inside the repo
 
 1. Download the [android sdk command line tools](https://developer.android.com/studio#command-line-tools-only)
 2. Put the folder in ``C:\Android\cmdline-tools``
@@ -17,7 +19,10 @@
 4. Move everything inside ``C:\Android\cmdline-tools`` into ``C:\Android\cmdline-tools\latest``
 5. Create the ``ANDROID_HOME`` enviroment variable as ``C:\Android``
 6. Add ``C:\Android\cmdline-tools\latest\bin`` to the PATH
-7. Now init the SDK by running ``sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"``
+
+## Android SDK
+
+1. Now install the SDK by running: ``"y" | sdkmanager "platform-tools"; sdkmanager "platforms;android-35" "build-tools;35.0.0"``
 
 ## Android Emulator
 
